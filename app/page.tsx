@@ -3,12 +3,12 @@ import React from "react";
 
 const Page = () => {
   return (
-  <>
-  <HeroSection/>
-  
-  </>
-
-  )
+    <>
+      <main className="px-5">
+        <HeroSection />
+      </main>
+    </>
+  );
 };
 
 export default Page;

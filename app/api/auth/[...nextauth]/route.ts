@@ -7,6 +7,7 @@ import prisma from "@/db/database.config";
 
 
 
+
 const handler = NextAuth({
     providers: [
         GoogleProvider({
@@ -25,6 +26,7 @@ const handler = NextAuth({
             console.log(session)
             return session
         },
+
         async signIn({ profile, credentials, user, account }) {
 
             try {
@@ -42,7 +44,7 @@ const handler = NextAuth({
                     data: {
                         email: user.email!,
                         username: user.name!,
-                        profilePicture: user.image!,
+                        pp: user.image!,
 
                     }
                 }).then(data => console.log(data))
@@ -51,6 +53,9 @@ const handler = NextAuth({
                 console.log(error)
                 return false
             }
+        }
+        , async redirect({ url, baseUrl }) {
+            return baseUrl
         }
     },
 });

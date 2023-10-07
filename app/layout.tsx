@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/common/Navbar";
 import Provider from "@/components/common/Provider";
+import { TailwindIndicator } from "@/components/common/tailwindIndicator";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + ' debug-screens'}>
+      <body className={inter.className + " debug-screens"}>
         <Provider>
           <ThemeProvider
             attribute="class"
@@ -31,6 +32,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </Provider>
+        <TailwindIndicator />
       </body>
     </html>
   );
