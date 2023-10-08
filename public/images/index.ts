@@ -8,6 +8,7 @@ import MarcusImg from "./Marcus.jpg";
 import WaterImg from "./WaterDrop.jpg";
 import AstroImg from "./Astro.jpg";
 import SamImg from "./Sam.jpg";
+import CatImg from './cat.webp'
 export {
   ArjunImg,
   AninshImg,
@@ -19,4 +20,5 @@ export {
   WaterImg,
   AstroImg,
   SamImg,
+  CatImg
 };
