@@ -1,7 +1,7 @@
 import React from "react";
 
 import { PriceData } from "@/config/Price";
-import PriceCardComponent from "../PriceCardComponent";
+import PriceCardComponent from "../mainPage/PriceCardComponent";
 
 const PricingSection = () => {
   return (

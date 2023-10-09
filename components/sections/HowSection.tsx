@@ -16,7 +16,10 @@ const HowSection = () => {
                 1.
               </span>
               Login or Create your Account
-              <Button className=""> Login Now</Button>
+              <Button className=" p-5   text-black font-bold bg-white shadow-xl hover:bg-gradient-to-r hover:text-white from-[#4158d0] via-[#c850c0] to-[#ffcc70]">
+                {" "}
+                Login Now
+              </Button>
             </li>
             <li>
               <span className="mr-6 text-5xl font-bold max-md:text-2xl">

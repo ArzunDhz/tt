@@ -20,11 +20,11 @@ const CreativeSection = () => {
             turning imagination into reality." - ChatGPT
           </h1>
           <div className="flex space-x-2 ">
-            <Button className="mt-5 font-bold">
+            <Button className="mt-5  text-black font-bold bg-white shadow-xl hover:bg-gradient-to-r hover:text-white from-[#4158d0] via-[#c850c0] to-[#ffcc70] ">
               <GoalIcon />
               <h1 className="ml-2">Start Now</h1>
             </Button>
-            <Button className="mt-5 font-bold">
+            <Button className="mt-5   text-black font-bold bg-white shadow-xl hover:bg-gradient-to-r hover:text-white from-[#4158d0] via-[#c850c0] to-[#ffcc70]">
               <SearchIcon />
               <h1 className="ml-3">Explore Gallery</h1>
             </Button>

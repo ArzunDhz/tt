@@ -1,4 +1,7 @@
+import { AccordionDemo } from "@/components/sections/AccordionSection";
 import CreativeSection from "@/components/sections/CreativeSection";
+import FindUs from "@/components/sections/FindUs";
+import Footer from "@/components/sections/FooterSection";
 import HeroSection from "@/components/sections/HeroSection";
 import HowSection from "@/components/sections/HowSection";
 import PricingSection from "@/components/sections/PriceingSection";
@@ -14,6 +17,9 @@ const Page = () => {
         <HowSection />
         <PricingSection />
         <ReviewSection />
+        <AccordionDemo />
+        <FindUs />
+        <Footer />
       </main>
     </>
   );

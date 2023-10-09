@@ -1,5 +1,5 @@
 import { PriceType } from "@/config/Price";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { CheckCircle2Icon } from "lucide-react";
 
 const PriceCardComponent = ({ data }: PriceType) => {
@@ -19,7 +19,9 @@ const PriceCardComponent = ({ data }: PriceType) => {
 
           <div className="flex flex-col items-center mb-6 Price">
             <h1 className="text-6xl font-bold ">{data.price}</h1>
-            <Button className="px-10 mt-5 ">Subscribe</Button>
+            <Button className="px-10 mt-5   text-black font-bold bg-white shadow-xl hover:bg-gradient-to-r hover:text-white from-[#4158d0] via-[#c850c0] to-[#ffcc70]">
+              Subscribe
+            </Button>
           </div>
         </div>
       </div>

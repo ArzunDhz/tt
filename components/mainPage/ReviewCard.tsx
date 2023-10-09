@@ -18,8 +18,8 @@ const ReviewCard = ({ data }: any) => {
         <h1 className="text-2xl font-bold text-center "> {data.user}</h1>
         <p className="text-sm text-center ">{data.comment}</p>
         <div className="flex  ml-[-40px] ">
-          {data.rating.map(() => (
-            <Image src={StarIcon} width={60} height={60} alt="Star" />
+          {data.rating.map((e: any) => (
+            <Image key={e} src={StarIcon} width={60} height={60} alt="Star" />
           ))}
         </div>
       </div>

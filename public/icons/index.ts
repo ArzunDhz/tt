@@ -8,6 +8,7 @@ import FaceBookIcon from "./facebook.svg";
 import LinkdinIcon from "./linkdin.svg";
 import TwitterIcon from "./Instagram.svg";
 import InstagramIcon from "./twitter.svg";
+import TokenIcon from './token.png'
 export {
   GitHubIcon,
   GoogleIcon,
@@ -19,4 +20,5 @@ export {
   LinkdinIcon,
   TwitterIcon,
   InstagramIcon,
+  TokenIcon
 };
