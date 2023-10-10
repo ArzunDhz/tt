@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -12,9 +13,11 @@ const HeroSection = () => {
           <p className="text-[70px] max-sm:text-[30px]  text-gradient font-[1000] max-sm:w-[300px] w-[700px] md:text-6xl ">
             Turn Your Imagination into Reality with FauroAI
           </p>
-          <Button className="mt-3 text-black font-bold bg-white shadow-xl hover:bg-gradient-to-r hover:text-white from-[#4158d0] via-[#c850c0] to-[#ffcc70]">
-            Start Creating <ArrowRight />
-          </Button>
+          <Link href={"/generate"}>
+            <Button className="mt-3 text-black font-bold bg-white shadow-xl hover:bg-gradient-to-r hover:text-white from-[#4158d0] via-[#c850c0] to-[#ffcc70]">
+              Start Creating <ArrowRight />
+            </Button>
+          </Link>
         </div>
         <Image
           src={HeroImg}
